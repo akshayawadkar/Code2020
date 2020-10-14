@@ -1,0 +1,12 @@
+
+public class _0006_TowerOfHannoi {
+	
+	public static void main(String[] args) {
+		
+		
+		int n = 3;
+		 
+		
+	}
+
+}

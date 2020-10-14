@@ -1,0 +1,10 @@
+package basics;
+public class _001_Operators {
+
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

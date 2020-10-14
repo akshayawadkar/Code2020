@@ -1,0 +1,16 @@
+package basics;
+
+public class _006_2SCompliment {
+
+	public static void main(String[] args) {
+
+		String ip = "10110001";
+
+		int num = Integer.parseInt(ip, 2);
+
+		 
+	}
+
+	 
+
+}

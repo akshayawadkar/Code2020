@@ -1,0 +1,30 @@
+
+public class _0016_GetMazePaths {
+	
+	public static void main(String[] args) {
+		
+		
+		int n = 3;
+		
+		int result = numWays(n, "");
+		
+		System.out.println(result);
+		
+	}
+
+	private static int numWays(int n, String curr) {
+		
+		if(n < 0) {
+			return 0;
+		}
+		
+		if(n == 0) {
+			System.out.println(curr);
+			return 1;
+		}
+		
+		return numWays(n - 1, curr + 1) 
+				+ numWays(n - 2, curr + 2);
+	}
+
+}

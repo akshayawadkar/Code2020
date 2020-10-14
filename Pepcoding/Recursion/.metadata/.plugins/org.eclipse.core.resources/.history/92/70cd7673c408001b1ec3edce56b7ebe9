@@ -1,0 +1,26 @@
+
+public class _0011_FirstIndexOfOccurance {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1,2,3,4,5,3,2,1};
+		int n = arr.length - 1;
+		int k = 3;
+		int result = solve(arr, n);
+		System.out.println(result);
+		 
+	}
+
+	private static int solve(int[] arr, int n) {
+		
+		if(n == -1) {
+			return Integer.MIN_VALUE;
+		}
+		
+		
+		return Math.max(arr[n], solve(arr, n - 1));
+	}
+
+	 
+
+}

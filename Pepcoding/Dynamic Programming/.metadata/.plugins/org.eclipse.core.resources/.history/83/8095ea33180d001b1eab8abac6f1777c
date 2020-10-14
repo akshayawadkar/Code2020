@@ -1,0 +1,20 @@
+
+public class _0004 {
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3, 34, 4, 12, 5, 2};
+
+		int sum = 9;
+		
+		boolean result = solve(arr, sum);
+		System.out.println(result);
+		
+	}
+
+	private static boolean solve(int[] arr, int sum) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+}

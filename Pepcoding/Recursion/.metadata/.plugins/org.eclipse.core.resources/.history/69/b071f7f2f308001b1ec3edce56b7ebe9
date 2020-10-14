@@ -1,0 +1,15 @@
+
+public class Test {
+	
+	static char[] map;
+	public static void main(String[] args) {
+		
+		String ip = "1234";
+		
+		map = " abcdefghijklmnopqrstuvwxyz".toCharArray();
+		
+		solve(ip, 0, "");
+		
+		
+	}
+}

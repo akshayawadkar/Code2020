@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class _0023_TargetSumSubset {
+	
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {10, 20, 30, 40, 50};
+		int sum = 60;
+		
+		solve(arr, sum);
+	}
+
+	private static void solve(int[] arr, int sum) {
+		 
+		List<Integer> subList = new ArrayList<>();
+		List<List<Integer>> result = new ArrayList<>();
+		
+		
+	}
+}

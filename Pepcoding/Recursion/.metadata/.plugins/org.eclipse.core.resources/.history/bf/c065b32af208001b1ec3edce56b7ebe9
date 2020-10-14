@@ -1,0 +1,41 @@
+
+public class _0021_PrintEncodings {
+	
+	static char[] arr;
+	public static void main(String[] args) {
+		
+		String ip = "123";
+		arr = " abcdefghijklmnopqrstuvwxyz".toCharArray();
+		
+		solve(ip, 0, "");
+	}
+	private static void solve(String ip, int idx, String curr) {
+		 
+		if(idx == ip.length()) {
+			System.out.println(curr + ip.charAt(ip.length() - 1));
+			return;
+		}
+		
+		if(idx == ip.length() - 1) {
+			System.out.println(curr + ip.charAt(ip.length() - 1));
+			return;
+		}
+		if(idx == ip.length() - 2) {
+			System.out.println(curr + ip.charAt(ip.length() - 1));
+			return;
+		}
+		
+		int oneDigit = Integer.valueOf(ip.substring(idx, idx + 1));
+		int twoDigit = Integer.valueOf(ip.substring(idx, idx + 2));
+		
+		solve(ip, idx + 1, curr + arr[oneDigit]);
+		if(twoDigit <= 26) {
+			solve(ip, idx + 2, curr + arr[twoDigit]);
+		}
+	
+		
+		
+		
+	}
+
+}

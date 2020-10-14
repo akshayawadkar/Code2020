@@ -1,0 +1,52 @@
+
+public class _0005_Pow2 {
+
+	public static void main(String[] args) {
+
+		double x = 2;
+		int n = 6;
+
+		double result = pow(x, n);
+
+		System.out.println(result);
+
+	}
+
+	/*
+	 * Understand the relation:
+	 * There are 2 possible situations
+	 * if n == even:
+	 * 		result = [x ^ (n / 2) * x ^ (n / 2)]
+	 * else if n == odd:
+	 * 		result = [x ^ (n / 2) * x ^ (n / 2)] * x
+	 * 
+	 * */
+	
+	
+	private static double pow(double x, int n) {
+
+		if (n < 0) {
+			return 1 / solve(x, n * -1);
+		} else {
+			return solve(x, n);
+		}
+
+	}
+
+	private static double solve(double x, int y) {
+		
+		 if(y == 0) {
+			 return 1;
+		 }
+		 
+		 double recur = solve(x, y / 2);
+		 
+		 double result = recur * recur;
+		 
+		 if(y % 2 != 0) {
+			 result = result * recur;
+		 }
+		 
+		 return result;
+	}
+}

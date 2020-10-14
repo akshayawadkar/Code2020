@@ -1,0 +1,15 @@
+
+public class _0004_MinCostPath2 {
+
+    
+    public int minPathSum(int[][] grid) {
+        int m = grid.length, n = grid[0].length;
+       
+        return solve(grid, m, n);
+    }
+    
+    private int solve(int[][] grid, int m, int n){
+        
+        int[][] dp = new int[m + 1][n + 1];
+    }
+}

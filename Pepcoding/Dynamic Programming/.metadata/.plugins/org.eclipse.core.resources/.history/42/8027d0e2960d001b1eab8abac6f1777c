@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class Test {
+
+	private static int[] bdps;
+
+	public static void main(String[] args) {
+
+		int n = 6;
+		int result = solve(n);
+		System.out.println(result);
+	}
+
+	private static int solve(int n) {
+		int[] sdp = new int[n + 1];
+		bdps = new int[n + 1];
+
+		sdp[1] = 1;
+		bdps[1] = 1;
+
+		for (int i = 2; i <= n; i++) {
+			bdps[i] = sdp[i - 1];
+			sdp[i] = sdp[i - 1] + bdps[i - 1];
+		}
+
+		return bdps[n] * sdp[n];
+	}
+
+}

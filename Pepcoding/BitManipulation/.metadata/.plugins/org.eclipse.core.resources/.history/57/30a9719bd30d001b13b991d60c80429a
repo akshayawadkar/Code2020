@@ -1,0 +1,25 @@
+
+public class _002_On {
+
+	
+	public static void main(String[] args) {
+		
+		
+		 String ip = "10110101";
+		 int num = Integer.valueOf(ip, 2);
+		 System.out.println(num); 
+		 
+		 int k = 3;
+		 
+		 solve(num, k);
+		
+//		 System.out.println(Integer.toBinaryString(num));
+	}
+
+	private static void solve(int num, int k) {
+	 
+		int tmp = 1 << k;
+		System.out.println(Integer.toBinaryString(tmp));
+		
+	}
+}

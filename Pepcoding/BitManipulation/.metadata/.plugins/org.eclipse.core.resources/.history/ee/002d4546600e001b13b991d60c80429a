@@ -1,0 +1,21 @@
+public class Test {
+
+	public static void main(String[] args) {
+
+		String ip = "11101000";
+		int num = Integer.parseInt(ip, 2);
+
+		System.out.println(ip);
+		System.out.println(num);
+
+		int numBits = 0;
+		
+		while(num != 0) {
+			int rmb = num & (-num);
+			num = num ^ rmb;
+			numBits++;
+		}
+		
+		System.out.println(numBits);
+	}
+}

@@ -1,0 +1,11 @@
+
+public class _0016_GetMazePaths {
+	
+	public static void main(String[] args) {
+		
+		int m = 3, n = 7;
+		
+		
+	}
+
+}

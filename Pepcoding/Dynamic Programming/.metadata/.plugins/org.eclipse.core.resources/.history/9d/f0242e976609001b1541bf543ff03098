@@ -1,0 +1,40 @@
+
+public class _0003_ClimbingStairsWithMinimumJumps {
+	
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3, 3, 0, 2, 2, 3};
+		int n = arr.length;
+		
+		int result = (int) solve(arr, 0, n);
+		System.out.println(result);
+		
+	}
+
+	private static long solve(int[] arr, int idx, int n) {
+		
+		if(idx > arr.length) {
+			return Integer.MAX_VALUE;
+		}
+		
+		if(idx == n) {
+			return 1;
+		}
+		 
+		
+		 
+		
+		int min = Integer.MAX_VALUE;
+		
+		for(int i = 1; i <= arr[idx]; i++) {
+			
+			min = Math.min(min, solve(arr, idx + i, n) + 1);
+			
+		}
+		
+		
+		return min;
+	}
+
+}

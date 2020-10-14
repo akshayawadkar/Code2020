@@ -1,0 +1,20 @@
+
+public class _4_SubsetSum {
+
+	public static void main(String[] args) {
+		int[] arr = { 3, 34, 4, 12, 5, 2 };
+		int sum = 47;
+		int n = arr.length;
+		boolean result = solve(arr, sum);
+		System.out.println(result);
+	}
+
+	private static boolean solve(int[] arr, int sum) {
+		
+		boolean[][] dp = new boolean[arr.length + 1][sum + 1];
+		
+		return dp[dp.length - 1][dp[0].length - 1];
+	}
+
+	 
+}

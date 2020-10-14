@@ -1,0 +1,38 @@
+import java.util.Arrays;
+
+public class _0005_RussianDollEnvelope {
+
+	public static void main(String[] args) {
+		int[][] arr = { { 5, 4 }, { 6, 4 }, { 6, 7 }, { 2, 3 } };
+
+		int result = solve(arr);
+		System.out.println(result);
+	}
+
+	private static int solve(int[][] arr) {
+		
+		Arrays.sort(arr, (a, b) -> {
+
+			if(a[0] == b[0]){
+			    return b[1] - a[1];
+			}
+			return a[0] - b[0];
+			
+		});
+		
+		
+		int result = 0;
+		
+		int[] dp = new int[arr.length];
+		
+		for(int i = 1; i < arr.length; i++) {
+			for(int j = 0; j < i; j++) {
+				
+			}
+		}
+		
+		
+		
+		return result;
+	}
+}

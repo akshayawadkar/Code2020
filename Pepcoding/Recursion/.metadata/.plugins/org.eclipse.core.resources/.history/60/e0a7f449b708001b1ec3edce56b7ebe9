@@ -1,0 +1,12 @@
+
+public class _006_ZigZag_TwoRegion {
+
+	
+	public static void main(String[] args) {
+		
+		int n = 3;
+		
+		solve(n);
+		
+	}
+}

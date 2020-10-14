@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="_007_Print_MinCostPaths2.Pair"/>
+    <fullyQualifiedTypeName name="java.time.chrono.MinguoChronology"/>
+    <fullyQualifiedTypeName name="java.lang.IncompatibleClassChangeError"/>
+    <fullyQualifiedTypeName name="_007_Print_MinCostPaths2.Node"/>
+    <fullyQualifiedTypeName name="_0008_MinJumps_JumpGame_Leetcode.Node"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.InaccessibleObjectException"/>
+    <fullyQualifiedTypeName name="sun.jvm.hotspot.utilities.IntArray"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="Test.Node"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.sun.jndi.url.rmi.rmiURLContext"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,26 @@
+
+public class _0024_NQueens {
+	
+	public static void main(String[] args) {
+		
+		int n = 4;
+		
+		int[][] chess = new int[n][n];
+		
+		solve(chess, "", 0);
+		
+	}
+
+	private static void solve(int[][] chess, String qsf, int row) {
+	 
+		
+		for(int col = 0; col < chess[0].length; col++) {
+			chess[row][col] = 1;
+			solve(chess, qsf + row +" - " + col, row + 1);
+		}
+		
+	}
+
+	 
+
+}

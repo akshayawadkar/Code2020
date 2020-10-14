@@ -1,0 +1,16 @@
+
+public class _0005_Pow {
+
+	public static void main(String[] args) {
+
+		int a = 2, b = 4;
+		int result = pow(a, b);
+	}
+
+	private static int pow(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	 
+}

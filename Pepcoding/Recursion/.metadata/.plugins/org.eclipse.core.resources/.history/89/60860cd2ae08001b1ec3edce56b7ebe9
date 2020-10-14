@@ -1,0 +1,37 @@
+
+public class _0005_Pow2 {
+
+	public static void main(String[] args) {
+
+		int a = 2, b = 4;
+		int result = pow(a, b);
+		System.out.println(result);
+	}
+
+	private static int pow(int a, int b) {
+	 
+		 if(b < 0) {
+			 return 1 / recuPow(a, b);
+		 }
+		 
+		 return recuPow(a, b);
+	}
+
+	private static int recuPow(int a, int b) {
+		
+		if(b == 0) {
+			return 1;
+		}
+		
+		if(b % 2 == 0) {
+			int tmpR = recuPow(a, b / 1) * a;
+			return tmpR * tmpR;
+		}else {
+			return recuPow(a, b - 1) * a;
+		}
+		
+	
+	}
+
+	 
+}

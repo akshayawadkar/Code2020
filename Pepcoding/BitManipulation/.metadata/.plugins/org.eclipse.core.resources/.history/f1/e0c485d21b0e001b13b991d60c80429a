@@ -1,0 +1,22 @@
+
+
+// Count the number of On Bits;
+public class _03_KernighinAlgorithm {
+	
+	public static void main(String[] args) {
+		
+		int num = 76;
+		System.out.println(num);
+		System.out.println(Integer.toBinaryString(num));
+		
+		int counter = 0;
+		
+		while(num != 0) {
+			num = num & (-num);
+			counter++;
+		}
+		
+		System.out.println(counter);
+	}
+
+}

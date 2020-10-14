@@ -1,0 +1,20 @@
+
+public class _0008_ArrangeBuildings {
+	
+	
+	public static void main(String[] args) {
+		
+		int n = 5;
+		
+		int result = solve(n);
+		
+		System.out.println(result);
+		
+	}
+
+	private static int solve(int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

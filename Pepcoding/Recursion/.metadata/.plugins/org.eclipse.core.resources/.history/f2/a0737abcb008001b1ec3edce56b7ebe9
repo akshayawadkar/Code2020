@@ -1,0 +1,19 @@
+
+public class _0005_Pow2 {
+
+	public static void main(String[] args) {
+		
+		double x = 2;
+		int y = 6;
+		
+		double result = pow(x, y);
+		
+		System.out.println(result);
+	
+	}
+
+	private static double pow(double x, int y) {
+		 
+		return 0;
+	}
+}

@@ -1,0 +1,26 @@
+
+public class _0006_CountPalindromicSubstrings {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		String ip = "abccbc";
+		int result = solve(ip);
+		System.out.println(result);
+		
+	}
+
+	private static int solve(String ip) {
+		 
+		int n = ip.length();
+		int result = 0;
+		
+		boolean[][] dp = new boolean[n][n];
+		
+		
+		
+		return result;
+	}
+
+}

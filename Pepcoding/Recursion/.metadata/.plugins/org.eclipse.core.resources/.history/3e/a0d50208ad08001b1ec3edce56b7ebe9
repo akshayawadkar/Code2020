@@ -1,0 +1,13 @@
+
+public class _0001_PrintIncreasing {
+
+	
+	public static void main(String[] args) {
+		
+		
+		int n = 5;
+		solve(n);
+		
+		
+	}
+}

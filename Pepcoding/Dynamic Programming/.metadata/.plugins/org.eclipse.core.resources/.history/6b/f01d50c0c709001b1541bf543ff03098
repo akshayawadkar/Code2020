@@ -1,0 +1,17 @@
+
+public class _0010_ABCSubsequences {
+	
+	public static void main(String[] args) {
+		
+		
+		String ip = "abcabc";
+		
+		solve(ip);
+		
+	}
+
+	private static void solve(String ip) {
+		 	
+	}
+
+}

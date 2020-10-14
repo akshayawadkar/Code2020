@@ -1,0 +1,12 @@
+
+public class _0005_Pow2 {
+
+	public static void main(String[] args) {
+		
+		double x = 2;
+		int y = 6;
+		
+		int result = pow(x, y);
+	
+	}
+}

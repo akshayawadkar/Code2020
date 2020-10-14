@@ -1,0 +1,27 @@
+
+public class _0006_ZigZag_TwoRegion {
+
+	
+	public static void main(String[] args) {
+		
+		int n = 3;
+		
+		solve(n);
+		
+	}
+
+	private static void solve(int n) {
+		 
+		if(n == 0) {
+			return;
+		}
+		
+		System.out.println("Pre: "+n);
+		solve(n - 1);
+		System.out.println("In: "+n);
+		solve(n - 1);
+		System.out.println("Post: "+n);
+		
+		
+	}
+}

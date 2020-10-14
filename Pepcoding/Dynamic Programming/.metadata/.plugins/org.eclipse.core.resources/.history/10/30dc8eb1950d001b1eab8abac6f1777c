@@ -1,0 +1,18 @@
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		int n = 4;
+		
+		int result = solve(n);
+		
+		System.out.println(result);
+	}
+	
+
+	private static int solve(int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

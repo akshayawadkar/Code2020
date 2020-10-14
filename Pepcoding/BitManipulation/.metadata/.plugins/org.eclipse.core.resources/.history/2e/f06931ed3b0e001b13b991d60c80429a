@@ -1,0 +1,20 @@
+
+public class _09_AllRepeatingExceptTwo {
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1,2,1,2,3,4,4,5};
+		solve(arr);
+	}
+
+	private static void solve(int[] arr) {
+		 
+		
+		int xxory = 0;
+		for(int i : arr) {
+			xxory = xxory | i;
+		}
+		
+	}
+}

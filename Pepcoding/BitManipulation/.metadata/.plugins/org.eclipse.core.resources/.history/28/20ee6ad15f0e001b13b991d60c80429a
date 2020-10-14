@@ -1,0 +1,31 @@
+public class Test{
+	
+	
+	public static void main(String[] args) {
+	
+		String ip = "11101000";
+		int num = Integer.parseInt(ip, 2);
+		
+		System.out.println(ip);
+		System.out.println(num);
+				
+		int rmsb = (num & (-num));
+		
+		System.out.println(Integer.toBinaryString(rmsb));
+		
+	}
+}
+/*
+	11101000
+	00010111
+		  +1
+	--------
+	00010111
+	
+	
+    11101000
+   &00010111
+   	________
+   	
+*/ 
+   

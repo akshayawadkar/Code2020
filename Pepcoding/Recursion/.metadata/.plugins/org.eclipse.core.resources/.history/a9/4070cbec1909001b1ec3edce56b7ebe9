@@ -1,0 +1,12 @@
+
+public class _0024_NQueens {
+	
+	public static void main(String[] args) {
+		
+		int n = 4;
+		
+		solve(n);
+		
+	}
+
+}

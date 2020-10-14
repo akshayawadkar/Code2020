@@ -1,0 +1,13 @@
+
+public class _002_On {
+
+	
+	public static void main(String[] args) {
+		
+		
+		 String ip = "10110111";
+		 int num = Integer.valueOf(ip, 2);
+		 System.out.println(num);
+		
+	}
+}

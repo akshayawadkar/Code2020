@@ -1,0 +1,17 @@
+
+public class _0016_GetMazePaths {
+	
+	public static void main(String[] args) {
+		
+		int m = 3, n = 7;
+		
+		int numWays = solve(m, n);
+		System.out.println(numWays);
+	}
+
+	private static int solve(int m, int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

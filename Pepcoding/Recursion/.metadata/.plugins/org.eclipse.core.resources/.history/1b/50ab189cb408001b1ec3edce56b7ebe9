@@ -1,0 +1,24 @@
+
+public class _0006_TowerOfHannoi {
+	
+	public static void main(String[] args) {
+		
+		
+		int n = 3;
+		solve(n, "a", "b", "c");
+		 
+		
+	}
+
+	private static void solve(int n, String t1, String t2, String t3) {
+	 
+		
+		solve(n - 1, t1, t3, t2);
+		System.out.println(n + "[" + t1 + " -> " + t2 + "]");
+		solve(n - 1, t3, t2, t1);
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+
+public class _0006TargetSumSubSets {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {4, 2, 7, 1, 3};
+		int sum = 10;
+		
+		boolean result = solve(arr, sum, arr.length - 1);
+		
+		System.out.println(result);
+		
+	}
+
+	private static boolean solve(int[] arr, int sum, int i) {
+	 
+		if(sum < 0 || i < 0) {
+			return false;
+		}
+		
+		if(sum == 0) {
+			return true;
+		}
+		
+		if() {
+			
+		}else {
+			return solve(arr, sum, i - 1);
+		}
+		
+		 
+	}
+
+}

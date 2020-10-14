@@ -1,0 +1,12 @@
+
+public class _0009_CountEncodings {
+	
+	char[] map;
+	public static void main(String[] args) {
+		
+		map = " abcdefghijklmnopqrstuvwxyz".toCharArray();
+		
+		String ip = "123";
+	}
+
+}

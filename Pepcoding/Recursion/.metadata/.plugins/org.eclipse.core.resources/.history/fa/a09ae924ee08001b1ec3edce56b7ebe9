@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class _0020_PrintPermutations {
+	
+	public static void main(String[] args) {
+		int[] arr = {1,2,3};
+		solve(arr);
+	}
+
+	private static void solve(int[] arr) {
+		 
+		Map<Integer, Integer> map = new HashMap<>();
+		
+	}
+
+}

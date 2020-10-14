@@ -1,0 +1,24 @@
+
+public class _02_RightMostSetBitMask {
+
+	
+	public static void main(String[] args) {
+		
+		int num = 76;
+		System.out.println(num);
+		System.out.println(Integer.toBinaryString(num));
+		
+		int inverted = ~num;
+		
+		System.out.println(Integer.toBinaryString(inverted));
+		
+		inverted = inverted + 1;
+		
+		System.out.println(Integer.toBinaryString(inverted));
+		
+		num = num & inverted;
+		
+		System.out.println(Integer.toBinaryString(num));
+		
+	}
+}

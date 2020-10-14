@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class _05_GrayCode {
+
+	public static void main(String[] args) {
+
+		int n = 3;
+
+		List<String> result = solve(n);
+
+		System.out.println(result);
+	}
+
+	private static List<String> solve(int n) {
+	 
+		List<String> result = solve(n - 1);
+		List<String> newResult = new ArrayList<>();
+		
+		for(int i = 0; i < result.size(); i++) {
+			String tmp = result.get(i);
+			newResult.add("0" + tmp);
+		}
+		
+		for(int i = result.size() - 1; i >= 0; i--) {
+			String tmp = result.get(i);
+			newResult.add("1" + tmp);
+		}
+		
+		
+		
+		
+		
+		return null;
+	}
+
+}

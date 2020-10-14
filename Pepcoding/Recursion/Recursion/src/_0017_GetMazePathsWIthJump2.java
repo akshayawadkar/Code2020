@@ -1,0 +1,39 @@
+
+public class _0017_GetMazePathsWIthJump2 {
+	static int m, n;
+	public static void main(String[] args) {
+
+		m = 4;
+		n = 4;
+
+		int numWays = solve(0, 0, "");
+		System.out.println(numWays);
+	}
+
+	private static int solve(int i, int j, String curr) {
+		
+		if(i >= m || j >= n) {
+			return 0;
+		}
+		
+		if(i == m - 1 && j == n - 1) {
+			System.out.println(curr);
+			return 1;
+		}
+		
+		return solve(i + 1, j, curr + "v1")
+				+ solve(i + 2, j, curr + "v2")
+				+ solve(i + 3, j, curr + "v3")
+				+ solve(i, j + 1, curr + "h1")
+				+ solve(i, j + 2, curr + "h2")
+				+ solve(i, j + 3, curr + "h3")
+				+ solve(i + 1, j + 1, curr + "d1")
+				+ solve(i + 2, j + 2, curr + "d2")
+				+ solve(i + 3, j + 3, curr + "d3");
+		 
+
+	}
+
+	 
+
+}

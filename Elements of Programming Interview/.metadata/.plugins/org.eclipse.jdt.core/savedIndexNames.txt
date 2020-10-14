@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/Users/akshayanilwadkar/Documents/Code/Elements of Programming Interview/.metadata/.plugins/org.eclipse.jdt.core
+564439505.index

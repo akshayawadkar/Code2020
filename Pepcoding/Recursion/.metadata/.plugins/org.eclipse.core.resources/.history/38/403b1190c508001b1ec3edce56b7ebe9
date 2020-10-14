@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class _0013_LastIndexOfOccurance {
+	
+	static List<Integer> result = new ArrayList<>();
+	public static void main(String[] args) {
+		
+		int[] arr = {3,2,3,4,5,3,2,1};
+		int n = arr.length - 1;
+		int k = 3;
+		solve(arr, n, k);
+		
+		System.out.println(result);
+		 
+	}
+
+	private static void solve(int[] arr, int n, int k) {
+		
+		if(n == -1) {
+			return;
+		}
+		
+		if(arr[n] == k) {
+			
+		}
+		
+		solve(arr, n - 1, k);
+		
+	}
+
+	 
+
+}

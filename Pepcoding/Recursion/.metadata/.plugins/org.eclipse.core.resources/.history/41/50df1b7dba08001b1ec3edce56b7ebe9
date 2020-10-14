@@ -1,0 +1,14 @@
+
+public class _007_TowerOfHanoi {
+
+	
+	public static void main(String[] args) {
+		
+		int n = 3;
+		
+		solve(n, "A", "B", "C");
+		
+	}
+
+	 
+}

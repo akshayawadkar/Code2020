@@ -1,0 +1,83 @@
+import java.util.Arrays;
+import java.util.LinkedList;
+
+public class Test{
+	
+	private static class Node{
+		int index;
+		int size;
+		int jumps;
+		String psf;
+		public Node(int index, int size, int jumps, String psf) {
+			super();
+			this.index = index;
+			this.size = size;
+			this.jumps = jumps;
+			this.psf = psf;
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3,3,0,2,1,2,4,2,0,0};
+		
+		Integer[] dp = new Integer[arr.length];
+		
+		solve(arr, dp);
+		bfs(arr, dp);
+		
+	}
+
+	private static void bfs(int[] arr, Integer[] dp) {
+		LinkedList<Node> q = new LinkedList<Test.Node>();
+		
+		q.add(new Node(0, arr[0], dp[0], "0"));
+		
+		while(!q.isEmpty()) {
+			int size = q.size();
+			
+			for(int i = 0; i < size; i++) {
+				
+				Node curr = q.poll();
+				
+				if(curr.jumps == 0) {
+					System.out.println(curr.psf);
+				}
+				
+				for(int j = 1; j <= curr.size && curr.index + j < arr.length; j++) {
+					if(dp[curr.index + j] != null && dp[curr.index + j] == curr.jumps - 1) {
+						q.add(new Node(curr.index + j, arr[curr.index + j], dp[curr.index + j], curr.psf+" "+curr.index + j));
+					}
+				}
+				
+				
+			}
+		}
+		
+	}
+
+	private static void solve(int[] arr, Integer[] dp) {
+	 
+	 
+		dp[dp.length - 1] = 0;
+		
+		for(int i = dp.length - 2; i >= 0; i--) {
+			int maxJumps = arr[i];
+			int min = Integer.MAX_VALUE;
+			for(int j = 1; j <= maxJumps && i + j < arr.length; j++) {
+				if(dp[i + j] != null) {
+					min = Math.min(min, dp[i + j]);
+				}
+			}
+			
+			if(min != Integer.MAX_VALUE) {
+				dp[i] = min + 1;
+			}
+		}
+		
+		System.out.println(Arrays.toString(dp));
+	}
+	
+}

@@ -1,0 +1,31 @@
+
+public class Test {
+
+	static char[] map;
+
+	public static void main(String[] args) {
+
+		String ip = "1234";
+
+		map = " abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+		solve(ip, 0, "");
+
+	}
+
+	private static void solve(String ip, int idx, String curr) {
+		 
+		
+		int oneDigit = Integer.valueOf(ip.substring(idx, idx + 1));
+		int twoDigit = Integer.valueOf(ip.substring(idx, idx + 2));
+		
+		if(oneDigit > 0) {
+			solve(ip, idx, curr + map[oneDigit]);
+		}
+		
+		if(twoDigit >= 10 && twoDigit <= 26) {
+			solve(ip, idx, curr + map[twoDigit]);
+		}
+		
+	}
+}

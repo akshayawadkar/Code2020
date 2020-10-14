@@ -1,0 +1,18 @@
+
+public class _0006_TowerOfHannoi {
+	
+	public static void main(String[] args) {
+		
+		
+		int n = 3;
+		solve(n, "a", "b", "c");
+		 
+		
+	}
+
+	private static void solve(int n, String string, String string2, String string3) {
+	 
+		
+	}
+
+}

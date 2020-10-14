@@ -1,0 +1,12 @@
+
+public class _0002_ClimbingStairs {
+
+	public static void main(String[] args) {
+		
+		int n = 4;
+		
+		int result = solve(n);
+		System.out.println(result);
+		
+	}
+}

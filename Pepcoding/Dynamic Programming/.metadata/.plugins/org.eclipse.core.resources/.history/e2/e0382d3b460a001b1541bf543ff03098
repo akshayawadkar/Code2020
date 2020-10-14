@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class _0003_LongestBitonicSubsequence {
+
+	public static void main(String[] args) {
+		  
+		int[] arr = {10, 22, 9, 33, 21, 50, 41, 60, 80, 3};
+		int result  = solve(arr);
+		System.out.println(result);
+		
+	}
+
+	private static int solve(int[] arr) {
+		 
+		int n = arr.length;
+		int[] LIS = new int[n];
+		
+		for(int i = )
+		
+		return 0;
+	}
+ 
+
+	 
+}

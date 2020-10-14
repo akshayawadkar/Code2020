@@ -1,0 +1,24 @@
+
+public class Test {
+
+	static char[] map;
+
+	public static void main(String[] args) {
+
+		String ip = "1234";
+
+		map = " abcdefghijklmnopqrstuvwxyz".toCharArray();
+
+		solve(ip, 0, "");
+
+	}
+
+	private static void solve(String ip, int curr, String string) {
+		 
+		
+		int oneDigit = Integer.valueOf(ip.substring(curr, curr + 1)));
+		int twoDigit = Integer.valueOf(ip.substring(curr, curr + 2)));
+		
+
+	}
+}

@@ -1,0 +1,19 @@
+
+public class _0005_RussianDollEnvelope {
+
+	public static void main(String[] args) {
+		int[][] arr = { { 5, 4 }, 
+					{ 6, 4 }, 
+					{ 6, 7 }, 
+					{ 2, 3 } };
+		
+		
+		int result = solve(arr);
+		System.out.println(result);
+	}
+
+	private static int solve(int[][] arr) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

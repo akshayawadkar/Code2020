@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class _0004_MaxOverlappingBridges {
+	
+	public static void main(String[] args) {
+		
+		int[][] arr = {{6, 2}, {4, 3}, {2, 6}, {1, 5}};
+		
+		int maxNonOverlappingBridges = solve(arr);
+		
+		System.out.println(maxNonOverlappingBridges);
+		
+		
+	}
+
+	private static int solve(int[][] arr) {
+	 
+		Arrays.sort(arr, (a, b) ->{
+			
+		});
+		
+		return 0;
+	}
+
+}

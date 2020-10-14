@@ -1,0 +1,13 @@
+
+public class _0003_ClimbingStairsWithJumps {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3, 3, 0, 2, 2, 3};
+		
+		int result = solve(arr, 0);
+		System.out.println(result);
+		
+	}
+
+}

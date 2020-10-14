@@ -1,0 +1,47 @@
+
+public class _0008_DispAnArray {
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {1,2,3,4,5};
+		int n = arr.length - 1;
+		solve(arr, n);
+		System.out.println();
+		solveReverse(arr, n);
+		
+		solve1(arr, 0);
+		
+		
+	}
+
+	private static void solve1(int[] arr, int n) {
+		 if(n == arr.length) {
+			 return;
+		 }
+		 
+		 System.out.println(arr[n]);
+		 solve1(arr, n + 1);
+	}
+
+	private static void solveReverse(int[] arr, int n) {
+		 
+		if(n == -1) {
+			return;
+		}
+		
+		System.out.println(arr[n]);
+		solveReverse(arr, n - 1);
+		
+	}
+
+	private static void solve(int[] arr, int n) {
+		
+		if(n == -1) {
+			return;
+		}
+		solve(arr, n - 1);
+		System.out.println(arr[n]);
+		
+	}
+
+}

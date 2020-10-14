@@ -1,0 +1,19 @@
+
+public class _02_RightMostSetBitMask {
+
+	
+	public static void main(String[] args) {
+		
+		int num = 76;
+		System.out.println(num);
+		System.out.println(Integer.toBinaryString(num));
+		
+		num = ~num;
+		
+		System.out.println(Integer.toBinaryString(num));
+		
+		num = num + 1;
+		
+		
+	}
+}

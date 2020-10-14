@@ -1,0 +1,24 @@
+
+public class _0004 {
+
+	
+	public static void main(String[] args) {
+		
+		int[] arr = {3, 34, 4, 12, 5, 2};
+
+		int sum = 9;
+		int n = arr.length;
+		boolean result = solve(arr, sum, n);
+		System.out.println(result);
+		
+	}
+
+	private static boolean solve(int[] arr, int sum) {
+		
+		if(sum == 0) {
+			return true;
+		}
+		
+		return false;
+	}
+}

@@ -1,0 +1,19 @@
+
+public class _0006_CountPalindromicSubstrings {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		String ip = "abccbc";
+		int result = solve(ip);
+		System.out.println(result);
+		
+	}
+
+	private static int solve(String ip) {
+		 
+		return 0;
+	}
+
+}

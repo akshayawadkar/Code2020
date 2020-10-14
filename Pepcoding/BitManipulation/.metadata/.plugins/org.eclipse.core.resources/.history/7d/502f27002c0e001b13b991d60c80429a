@@ -1,0 +1,15 @@
+import java.util.List;
+
+public class _07_NumberOfValidWordsInAPuzzle {
+
+	public static void main(String[] args) {
+
+		String[] words = { "aaaa", "asas", "able", "ability", "actt", "actor", "access" };
+
+		String[] puzzles = { "aboveyz", "abrodyz", "abslute", "absoryz", "actresz", "gaswxyz" };
+//		Output: [1,1,3,2,4,0]
+		
+		List<Integer> result = solve(words, puzzles);
+	}
+
+}

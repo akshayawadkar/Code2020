@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		String s = "123";
+		int result = solve(s, 0);
+		
+		System.out.println(result);
+	}
+}
