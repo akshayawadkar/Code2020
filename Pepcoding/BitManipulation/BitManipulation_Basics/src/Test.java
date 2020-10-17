@@ -1,35 +1,30 @@
-import java.util.*;
-
 public class Test {
- 
+
 	public static void main(String[] args) {
-		
-		int num = 3;
-		
-		List<String> result = solve(3);
+
+		int[] arr = { 197, 130, 1 };
+
+		boolean result = solve(arr);
 		System.out.println(result);
-		
-		
+
 	}
 
-	private static List<String> solve(int n) {
-	 
-		if(n == 1) {
-			return new ArrayList<>(Arrays.asList("0", "1"));
+	private static boolean solve(int[] arr) {
+		
+		for(int val : arr) {
+			
+			if((val >> 7) == 0b0) {
+				
+			}else if((val >> 5) == 0b110) {
+				
+			}else if((val >> 4) == 0b1110) {
+				
+			}else if((val >> 3) == 0b11110) {
+				
+			}
+			
 		}
 		
-		List<String> recur = solve(n - 1);
-		
-		List<String> result = new ArrayList<>();
-		
-		for(int i = 0; i < recur.size(); i++) {
-			result.add("0" + recur.get(i));
-		}
-		
-		for(int i = recur.size() - 1; i >= 0; i--) {
-			result.add("1" + recur.get(i));
-		}
-		
-		return result;
+		return true;
 	}
 }
