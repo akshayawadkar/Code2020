@@ -1,0 +1,52 @@
+package com.leetcode;
+
+import java.util.*;
+
+public class _15 {
+    public List<List<Integer>> threeSum(int[] nums) {
+        
+        
+        
+        if(nums.length == 0){
+            return new ArrayList<>();
+        }
+        
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums);
+        
+        for(int i = 0; i < nums.length; i++){
+            
+            
+            if(i != 0 && nums[i - 1] == nums[i]){
+                continue;
+            }
+            
+            int j = i + 1, k = nums.length - 1;
+            
+            while(j < k){
+            
+                if(k != nums.length - 1 && nums[k] == nums[k + 1]){
+                    k--;
+                    continue;
+                }
+                
+                int sum = nums[i] + nums[j] + nums[k];
+                
+                if(sum == 0){
+                    result.add(new ArrayList<>(Arrays.asList(nums[i], nums[j],nums[k])));
+                    j++;
+                    k--;
+                }else if(sum > 0){
+                    k--;
+                }else{
+                    j++;
+                }
+                
+                
+            }
+        }
+        
+        return result;
+        
+    }
+}
