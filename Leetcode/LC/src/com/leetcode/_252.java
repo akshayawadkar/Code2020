@@ -1,24 +1,46 @@
 package com.leetcode;
+
 import java.util.*;
+
 public class _252 {
 
-        public boolean canAttendMeetings(int[][] intervals) {
+	public boolean canAttendMeetings(int[][] intervals) {
 
-            Arrays.sort(intervals, (a, b) ->{
+		Arrays.sort(intervals, (a, b) -> {
 
-                return a[0] - b[0];
-            });
+			return a[0] - b[0];
+		});
 
-            for(int i = 1; i < intervals.length; i++){
+		for (int i = 1; i < intervals.length; i++) {
 
-                int[] prev = intervals[i - 1];
-                int[] curr = intervals[i];
+			int[] prev = intervals[i - 1];
+			int[] curr = intervals[i];
 
-                if(prev[1] > curr[0]){
-                    return false;
-                }
+			if (prev[1] > curr[0]) {
+				return false;
+			}
 
-            }
-            return true;
-        }
+		}
+		return true;
+	}
+
+	public boolean solve(int[][] intervals) {
+
+		Arrays.sort(intervals, (a, b) -> {
+			return a[0] - b[0];
+		});
+
+		for (int i = 1; i < intervals.length; i++) {
+			int[] prev = intervals[i - 1];
+			int[] curr = intervals[i];
+
+			if (prev[1] > curr[0]) {
+				return false;
+			}
+
+		}
+
+		return true;
+	}
+
 }

@@ -1,5 +1,5 @@
 package com.leetcode;
-import java.util.*;
+
 public class _50 {
     class Solution {
         public double myPow(double x, int n) {
