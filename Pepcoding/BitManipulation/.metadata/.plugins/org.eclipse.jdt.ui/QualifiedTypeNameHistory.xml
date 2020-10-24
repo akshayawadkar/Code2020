@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="UserAddress"/>
     <fullyQualifiedTypeName name="UserSimple"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="Item"/>
     <fullyQualifiedTypeName name="Restaurant"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
@@ -20,7 +19,6 @@
     <fullyQualifiedTypeName name="com.google.gson.annotations.Expose"/>
     <fullyQualifiedTypeName name="com.google.gson.GsonBuilder"/>
     <fullyQualifiedTypeName name="com.google.gson.annotations.JsonAdapter"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonSyntaxException"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonParseException"/>
@@ -29,4 +27,6 @@
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.comp.Check"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

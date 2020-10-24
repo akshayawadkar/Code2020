@@ -1,3 +1,2 @@
 INDEX VERSION 1.131+/Users/akshayanilwadkar/Documents/Code/Pepcoding/BitManipulation/.metadata/.plugins/org.eclipse.jdt.core
-4272379998.index
 3703194086.index
