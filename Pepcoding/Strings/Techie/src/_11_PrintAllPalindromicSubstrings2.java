@@ -3,7 +3,7 @@ public class _11_PrintAllPalindromicSubstrings2 {
 
 	public static void main(String[] args) {
 
-		String ip = "google";
+		String ip = "aab";
 		sove(ip);
 	}
 
