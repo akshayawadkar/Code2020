@@ -1,9 +1,6 @@
-import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Arrays;
 
-public class Test {
-
+public class _25_PreviousPermutation {
 	public static void main(String[] args) {
 
 		int[] arr = { 5, 3, 2, 4, 1, 6 };
@@ -53,4 +50,5 @@ public class Test {
 		arr[k] = tmp;
 
 	}
+
 }

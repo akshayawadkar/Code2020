@@ -2,7 +2,7 @@
 public class _01_CkeckIfStringIsRotatedPalindrome {
 
 	public static void main(String[] args) {
-		String ip = "akska";
+		String ip = "ABCDCBA";
 		boolean result = solve(ip);
 		System.out.println(result);
 	}
